@@ -2,6 +2,28 @@
 # this is needed
 ---
 
+@import "normalize-opentype";
+
+html, body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 500;
+}
+
+$font-family-sans-serif: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+
+$gray-darkest: #49494a;
+$gray-darker: #57565a;
+$gray-dark: #818186;
+$gray: #a2a2a9;
+$gray-light: #c1c0c7;
+$gray-lighter: #e1e1e3;
+
+$text-color: $gray-darkest;
+
 $blue-shirt-blue: #085eb9;
 $bby-blue: #053f68;
 $mybby-blue: #0073bd;
@@ -21,11 +43,31 @@ $navbar-inverse-color: white;
 $navbar-inverse-border: none;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                 white;
+$navbar-inverse-link-color: white;
 
 @import "bootstrap";
 
 .brand {
 	margin-top: 24px;
 	display: inline-block
+}
+
+.hero-unit {
+	margin-top: -22px;
+	background-image: url({{site.baseurl}}/images/hero-unit.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	h1 {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $bby-blue;
+	}
+
+	p {
+		font-size: 20px;
+	}
 }
