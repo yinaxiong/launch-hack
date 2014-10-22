@@ -1,0 +1,31 @@
+---
+# this is needed
+---
+
+$blue-shirt-blue: #085eb9;
+$bby-blue: #053f68;
+$mybby-blue: #0073bd;
+$mobile-blue: #aae0ec;
+$medium-yellow: #ffd500;
+$bby-yellow: #fff200;
+$sustain-green: #82b800;
+$web-green: #308c00;
+
+$brand-primary: $bby-blue;
+$brand-success: $web-green;
+$brand-info: $mybby-blue;
+
+$navbar-height: 92px;
+$navbar-inverse-bg: $bby-blue;
+$navbar-inverse-color: white;
+$navbar-inverse-border: none;
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 white;
+
+@import "bootstrap";
+
+.brand {
+	margin-top: 24px;
+	display: inline-block
+}
