@@ -13,3 +13,6 @@ github_username:  BestBuyAPIs
 # Build settings
 markdown: kramdown
 exclude: [vendor]
+collections:
+- sections
+- apis
