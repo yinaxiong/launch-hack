@@ -34,7 +34,7 @@ layout: default
                 </div>
             </div>
         </div>
-    {% if thecycle == 'even' %}
+    {% if thecycle == 'even' or forloop.last %}
     </div>
     {% endif %}
     {% endfor %}
