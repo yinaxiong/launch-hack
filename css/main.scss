@@ -2,14 +2,13 @@
 # this is needed
 ---
 
-@import "normalize-opentype";
+@import "normalize-opentype", "atomic";
 
 html, body {
     overflow-x: hidden;
     -webkit-overflow-scrolling: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: 500;
 }
 
 $font-family-sans-serif: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
