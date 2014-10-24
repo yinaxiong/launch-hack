@@ -221,3 +221,8 @@ $navbar-inverse-link-color: white;
         }
     }
 }
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

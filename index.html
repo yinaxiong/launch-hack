@@ -33,7 +33,7 @@ layout: default
     {% if thecycle == 'odd' %}
     <div class="row">
     {% endif %}
-        <div class="col-sm-6">
+        <div class="col-sm-6 {{api.class}}">
             <div class="media">
                 <a href="{{api.href}}">
                     <img src="{{ site.baseurl }}{{api.retina}}" alt="" class="media-object pull-left">
