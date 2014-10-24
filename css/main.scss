@@ -2,7 +2,7 @@
 # this is needed
 ---
 
-@import "normalize-opentype", "atomic";
+@import "normalize-opentype", "atomic", "monokai";
 
 html, body {
     overflow-x: hidden;
@@ -12,7 +12,8 @@ html, body {
 }
 
 $font-family-sans-serif: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
-$font-size-base: 16px;
+$font-size-base: 14px;
+$headings-font-weight: bold;
 
 $gray-darkest: #49494a;
 $gray-darker: #57565a;
@@ -53,6 +54,7 @@ $navbar-inverse-link-color: white;
 
 .hero-unit {
 	margin-top: -22px;
+	margin-bottom: 22px;
 	background-image: url({{site.baseurl}}/images/hero-unit.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -61,8 +63,6 @@ $navbar-inverse-link-color: white;
 	padding-bottom: 40px;
 
 	h1 {
-		font-weight: bold;
-		text-transform: uppercase;
 		color: $bby-blue;
 	}
 
@@ -86,5 +86,138 @@ $navbar-inverse-link-color: white;
         border-radius: 50px;
         border: 2px solid $mobile-blue;
         margin-right: 20px;
+    }
+}
+
+.stats-block {
+	.stats {
+	  text-align: center;
+	  position: relative;
+	  white-space: nowrap;
+	  h2 {
+	      font-size: 83px;
+	      font-weight: 300;
+	      letter-spacing: -5px;
+	      display: inline-block;
+	  }
+
+	  span {
+	      font-size: 25px;
+	      font-weight: normal;
+	  }
+
+	  &:after {
+	      content: '';
+	      position: absolute;
+	      top: 20%;
+	      bottom: 40%;
+	      background: $gray-lighter;
+	      width: 1px;
+	      right: -1px;
+	  }
+
+	  &:last-of-type {
+	      &:after {
+	          content: none;
+	      }
+	  }
+
+	  @media (max-width: $screen-xs-max) {
+	      h2 {
+	          font-size: 60px;
+	      }
+	      span {
+	          font-size: 20px;
+	      }
+
+	      &:after {
+	          bottom: 50px;
+	      }
+	  }
+
+	}
+}
+
+.header-row {
+	background-color: $bby-blue;
+	color: white;
+}
+
+.code-blocks {
+    position: relative;
+    min-height: 100px;
+    clear: both;
+    margin: 20px 0;
+    background: #032741;
+
+    hr {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .code-block {
+        float: left;
+
+        label {
+            padding: 10px;
+            margin-left: 5px;
+            position: relative;
+            left: 0;
+            font-weight: 600;
+            color: $gray-light;
+            cursor: pointer;
+        }
+
+        .req {
+            word-break: break-all;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+
+            color: $mobile-blue;
+
+            a {
+                color: $mobile-blue;
+            }
+        }
+
+        [type=radio] {
+            display: none;
+
+            &:checked ~ label {
+                color: #fff;
+                z-index: 2;
+
+                & ~ .content {
+                    z-index: 1;
+                    visibility: visible;
+                }
+
+                &:before {
+                    content: " ";
+                    width: 100%;
+                    height: 5px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background: $gray-lighter;
+                }
+            }
+        }
+
+        .content {
+            position: absolute;
+            top: 39px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 10px 20px;
+            border-top: 1px solid $gray-lighter;
+            visibility: hidden;
+
+            pre {
+                border: none;
+            }
+        }
     }
 }
