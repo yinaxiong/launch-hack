@@ -37,10 +37,10 @@ As part of our Recommendations API you can find:
  - Search omits stores that do not have product in stock
  - Search does not return store in order of proximity
 
-{#include code:responses/storesPlusProduct}
+{% include responses/stores-plus-products.html %}
 
 ## Reviews for a product
 - You can find ratings and reviews for a particular product (SKU based)
 - You can find ratings and reviews for a group of products (i.e. iPhone 6)
 
-{#include code:responses/reviewsForProduct}
+{% include responses/reviews-for-product.html %}
