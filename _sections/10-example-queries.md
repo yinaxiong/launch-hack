@@ -2,8 +2,8 @@
 title: Example Queries
 ---
 
-## Search for on-sale products
-- The [**Products API**](/documentation/products-api) has 200+ attributes in which queries can be based (including keyword search).
+## Search for *on-sale* products
+- The [**Products API**](/documentation/products-api) has 200+ attributes on which queries can be based (including keyword search).
 - [**Searches**](/documentation#advancedSearch-search) can take operators like `<>`, `=`, `&` and `|`.
 - Results can be narrowed to just attributes of interest (`show=salePrice,regularPrice,percentSavings,dollarSavings,sku`).
 
@@ -16,7 +16,7 @@ title: Example Queries
 
 {% include responses/search-home-automation.html %}
 
-## Most Popular Viewed products on **BESTBUY.com**
+## Find *Most Popular Viewed* products on **BESTBUY.COM**
 As part of our Recommendations API you can find:
 
 - [**Most Popular Viewed Products**](/documentation/recommendations-api#documentation/recommendations-api-most-popular-viewed) - provides a list of the most popular products on **BESTBUY.COM** product detail page
@@ -26,21 +26,23 @@ As part of our Recommendations API you can find:
 
 {% include responses/most-viewed.html %}
 
-## Identify closest stores based on **postal code**
- - This example identifies stores based on five digit postal code
+## Find closest stores based on *postal code*
+ - This example identifies stores based on five digit postal code using the [**Stores API**](documentation/stores-api)
  - You can also use `lat` and `lng` as search parameters
 
 {% include responses/search-stores-by-zip.html %}
 
-## Find closest stores that have requested product in stock based on latitude and longitude
+## Find closest stores that have a specific *product* based on *lat* and *lng*
  - This example uses a `lat` and `lng` in a ten mile radius to find a store. The area function syntax is `area(location,distance)` where location can be `postalCode` or a `lat` and `lng` pair
  - Search omits stores that do not have product in stock
  - Search does not return store in order of proximity
+ - Search uses [**Stores API**](documentation/stores-api) and [**Products API**](documentation/products-api)
 
 {% include responses/stores-plus-products.html %}
 
-## Reviews for a product
+## Find *Reviews* for a product
 - You can find ratings and reviews for a particular product (SKU based)
-- You can find ratings and reviews for a group of products (i.e. iPhone 6)
+- You can find ratings and reviews for a group of products (e.g., iPhone 6)
+- Search uses [**Reviews API**](documentation/reviews-api)
 
 {% include responses/reviews-for-product.html %}
