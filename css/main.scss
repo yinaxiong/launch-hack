@@ -9,6 +9,7 @@ html, body {
     -webkit-overflow-scrolling: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 40px;
 }
 
 $font-family-sans-serif: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -139,6 +140,7 @@ $navbar-inverse-link-color: white;
 }
 
 .header-row {
+    margin: 20px 0;
 	background-color: $bby-blue;
 	color: white;
 }
@@ -225,4 +227,8 @@ $navbar-inverse-link-color: white;
 .grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.apis {
+    margin-top: 30px;
 }

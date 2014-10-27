@@ -19,7 +19,7 @@ layout: default
         </div>
     </div>
 </div>
-<div class="container apis">
+<div class="container">
 	<div class="row">
 		<h1 class="ta-c fw-700">WHAT ARE THE BEST BUY APIs?</h1>
 	</div>
@@ -28,6 +28,8 @@ layout: default
             <p>The Best Buy APIs give you access to Best Buy store information and our product catalog, including product availability, customer reviews and recommendations. Below are the endpoints available for your use. There are additional attribute details available in the <a href="https://developer.bestbuy.com/documentation/products-api"><strong>Documentation</strong></a> section of developer.bestbuy.com.</p>
         </div>
     </div>
+</div>
+<div class="container apis">
     {% for api in site.apis %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
