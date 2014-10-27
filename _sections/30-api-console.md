@@ -16,4 +16,10 @@ The [**API Console**](https://remix.mashery.com/io-docs) provides an interface f
 
 ## Query Builder
 
-We have created a application called [**BBY Query Mixer**](https://bestbuyapis.github.io/bby-query-mixer/app/). This sample AngularJS app allows you to build queries for the Best Buy Products API. It also gives you visibility to how we have
+We have created a application called [**BBY Query Mixer**](https://bestbuyapis.github.io/bby-query-mixer/app/). This sample AngularJS app allows you to build and execute queries. In addition it does the following:
+
+- Demonstrates how to write queries against the Products API and Recommendations API
+- Executes queries and shows results
+- Shows sample AngularJS code and tests for using our tools
+- [See it in action](http://bestbuyapis.github.io/bby-query-mixer)
+- [Source code](https://github.com/BestBuyAPIs/bby-query-mixer)
