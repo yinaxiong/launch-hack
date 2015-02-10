@@ -2,12 +2,12 @@
 title: 'How do I get started?'
 ---
 
-## STEP 1 - Get a key
-You will need to register for a key. To do this visit [**GET API Key**](https://remix.mashery.com/member/register) and complete your registration. We'll immediately send you an email with instructions on how to activate your new key. The whole process should take less than five minutes.
+## Get a key
+To register for a key, visit [**GET API Key**](https://remix.mashery.com/member/register). Complete your registration and we'll email you with instructions on how to activate your new key. The whole process should take less than five minutes.
 
-## STEP 2 - Create a query
-After you activate your key, you can start accessing Best Buy's data with a basic GET request. To help you get started, here is an example using our [**Products API**](/documentation/products-api) for a specific product. The SKU for _Batman Begins (Blu-ray Disc)_ is 8880044, so you can retrieve it in the example below. The response will be returned as either JSON or XML depending on the extension specified in the URL.
+## Try our Query Builder
+The Best Buy [Query Builder](https://bestbuyapis.github.io/bby-query-mixer/#/) is an angular JS app that allows you to build and execute queries. This is just a sampling of what our API offers. Please explore our API capabilities further using this guide and our documentation along with the Query Builder.
 
-_HINT: Don't forget to replace **YourAPIKey** with the API key that you received from us._
+<a href="https://bestbuyapis.github.io/bby-query-mixer/#/"><img src="images/hackathon/QueryBuilderProduct.png">
 
-{% include responses/getting-started.html %}
+## Explore Our APIs
