@@ -1,10 +1,10 @@
 # Site settings
-title: Best Buy @ UDE Hackathon
+title: Best Buy @ LAUNCH Hackathon
 email: developer@bestbuy.com
 description: > # this means to ignore newlines until "baseurl:"
   This site will walk you through getting started with the Best Buy APIs. It also includes tips and tricks for searching and narrowing your results. We look forward to seeing what you create.
-baseurl: "/ude-hack" # the subpath of your site, e.g. /blog/
-url: "https://bestbuyapis.github.io/use-hack" # the base hostname & protocol for your site
+baseurl: "/launch-hack" # the subpath of your site, e.g. /blog/
+url: "https://bestbuyapis.github.io/launch-hack" # the base hostname & protocol for your site
 twitter_username: BBYopen
 github_username:  BestBuyAPIs
 

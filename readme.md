@@ -1,4 +1,4 @@
-# Best Buy APIs @ UDE Hackathon
+# Best Buy APIs @ LAUNCH Hackathon
 
 ## Setup for local development
 
