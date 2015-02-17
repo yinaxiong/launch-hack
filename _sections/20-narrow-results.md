@@ -1,5 +1,6 @@
 ---
 title: Narrow your Results
+id: narrow-results
 ---
 
 ### [Search](/documentation#advancedSearch-search)

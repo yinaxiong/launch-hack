@@ -4,13 +4,6 @@
 
 @import "normalize-opentype", "atomic", "monokai";
 
-html, body {
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-bottom: 40px;
-}
 
 $font-family-sans-serif: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
 $font-size-base: 14px;
@@ -38,13 +31,22 @@ $brand-primary: $bby-blue;
 $brand-success: $web-green;
 $brand-info: $mybby-blue;
 
-$navbar-height: 92px;
+$navbar-height: 80px;
 $navbar-inverse-bg: $bby-blue;
 $navbar-inverse-color: white;
 $navbar-inverse-border: none;
 
 // Inverted navbar links
 $navbar-inverse-link-color: white;
+
+html, body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 40px;
+    padding-top: $navbar-height / 2;
+}
 
 @import "bootstrap";
 
@@ -54,7 +56,6 @@ $navbar-inverse-link-color: white;
 }
 
 .hero-unit {
-	margin-top: -22px;
 	margin-bottom: 22px;
 	background-image: url({{site.baseurl}}/images/hero-unit.jpg);
 	background-size: cover;
@@ -231,4 +232,11 @@ $navbar-inverse-link-color: white;
 
 .apis {
     margin-top: 30px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -$navbar-height;
+    visibility: hidden;
 }

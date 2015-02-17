@@ -1,5 +1,6 @@
 ---
 title: Example Queries
+id: example-queries
 ---
 
 ## Search for *on-sale* products

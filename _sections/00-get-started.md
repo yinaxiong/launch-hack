@@ -1,5 +1,6 @@
 ---
 title: 'How do I get started?'
+id: get-started
 ---
 
 ## Get a key
