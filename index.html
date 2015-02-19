@@ -12,6 +12,19 @@ layout: default
 		</div>
 	</div>
 </div>
+{% for section in site.sections %}
+<a id="{{section.id}}" class="anchor"></a>
+{% if section.title %}
+<div class="container-fluid header-row">
+    <div class="container tt-u ta-c">
+        <h1>{{section.title}}</h1>
+    </div>
+</div>
+{% endif %}
+<div class="container">
+    {{section.output}}
+</div>
+{% endfor %}
 <div class="container apis">
     {% for api in site.apis %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -36,14 +49,3 @@ layout: default
     {% endif %}
     {% endfor %}
 </div>
-{% for section in site.sections %}
-<div class="container-fluid header-row">
-    <div class="container tt-u ta-c">
-        <a id="{{section.id}}" class="anchor"></a>
-        <h1>{{section.title}}</h1>
-    </div>
-</div>
-<div class="container">
-    {{section.output}}
-</div>
-{% endfor %}
