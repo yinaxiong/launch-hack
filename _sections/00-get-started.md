@@ -11,4 +11,4 @@ Our Query Builder allows you to access a subset of Best Buy API functionalities.
 <a href="https://bestbuyapis.github.io/bby-query-mixer/" class="btn btn-lg btn-ghost"><b>LAUNCH</b> Query Builder</a>
 
 ## Explore Our APIs
-Best Buy has a rich API offering from Products, to Stores, to Open Box and many more. We have also provided a quick reference to get you up and running quickly.
+Best Buy has a rich API offering from Products, to Stores, to Open Box and many more. We have also provided a quick reference to get you up and running smoothly.
