@@ -13,7 +13,7 @@ id: example-queries
 ## Find *Most Popular Viewed* products on **BESTBUY.COM**
 As part of our Recommendations API you can find:
 
-- [**Most Popular Viewed Products**](https://developer.bestbuy.com/documentation/recommendations-api#documentation/recommendations-api-most-popular-viewed) - provides a list of the most popular products on **BESTBUY.COM** product detail page
+- [**Most Popular Viewed Products**](https://developer.bestbuy.com/documentation/recommendations-api#documentation/recommendations-api-most-popular-viewed) - provides a list of the most popular products on BESTBUY.COM product detail page
 - [**Trending Products**](https://developer.bestbuy.com/documentation/recommendations-api#documentation/recommendations-api-trending-products) - provides a list of the top ten products trending on **BESTBUY.COM** over a rolling three hour period
 - [**Also Viewed Products**](https://developer.bestbuy.com/documentation/recommendations-api#documentation/recommendations-api-also-viewed) - provides a list of products viewed at the same time as the requested SKU
 - [**Similar Products**](https://developer.bestbuy.com/documentation/recommendations-api#documentation/recommendations-api-similar-products) - products that have similar attributes to the requested product
@@ -21,7 +21,7 @@ As part of our Recommendations API you can find:
 {% include responses/most-viewed.html %}
 
 ## Find Open Box Offers
-The Open Box endpoints returls all available Open Box offers. You can search for offers using multiple methods.
+The Open Box endpoints return all available Open Box offers. You can search for offers using multiple methods.
 
 - [**Open Box by Single SKU**](https://developer.bestbuy.com/documentation/buyingOptions-api#documentation/buyingOptions-api-open-box-single-sku) - provides offers based on a single SKU
 - [**Open Box by List of SKUs**](https://developer.bestbuy.com/documentation/buyingOptions-api#documentation/buyingOptions-api-open-box-by-list-of-skus) - provides offers based on a comma delimited list of SKUs
@@ -46,6 +46,6 @@ The Open Box endpoints returls all available Open Box offers. You can search for
 {% include responses/reviews-for-product.html %}
 
 ## Return SmartList Connected Home products
-The Connect Home endpoint helps to guide users to top rated products related to Connected Home.
+The Connected Home endpoint helps to guide users to top-rated products related to Connected Home.
 
 **Need to provide an example for Connected Home**
