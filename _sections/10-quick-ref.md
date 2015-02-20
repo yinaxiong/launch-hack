@@ -1,7 +1,12 @@
 ---
-title: Narrow your Results
-id: narrow-results
+title: Quick Reference
+id: quick-ref
 ---
+
+## Best Buy API Overview
+Placeholder for API icons and descriptions from (_apis)
+
+## Narrowing Your Results
 
 ### [Search](/documentation#advancedSearch-search)
 There are many ways to search for a singular product or group of products that you need. The most common operators are `=`,`&` for **and**, `|` for **or** and `<>` for **less than** and **greater than** and they can be used with most attributes. For Example: using the Products API `/products(manufacturer=canon&salePrice<1000)`
