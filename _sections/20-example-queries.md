@@ -28,7 +28,7 @@ The Open Box endpoints return all available Open Box offers. You can search for 
 - [**Open Box by Category**](https://developer.bestbuy.com/documentation/buyingOptions-api#documentation/buyingOptions-api-open-box-by-category) - provides offers based on category id; for more information on categories see the [Category API](https://developer.bestbuy.com/documentation/categories-api)
 - [**Open Box All SKUs**](https://developer.bestbuy.com/documentation/buyingOptions-api#documentation/buyingOptions-api-open-box-all-skus) - provides all Open Box offers
 
-**Need to provide an example for Open Box**
+<!-- {% include responses/open-box.html %} -->
 
 ## Find closest stores with a specific *product* based on *lat* and *lng*
  - This example uses a `lat` and `lng` in a ten mile radius to find a store. The area function syntax is `area(location,distance)` where location can be `postalCode` or a `lat` and `lng` pair
@@ -48,4 +48,4 @@ The Open Box endpoints return all available Open Box offers. You can search for 
 ## Return SmartList Connected Home products
 The Connected Home endpoint helps to guide users to top-rated products related to Connected Home.
 
-**Need to provide an example for Connected Home**
+{% include responses/connected-home.html %}
