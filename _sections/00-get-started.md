@@ -1,13 +1,29 @@
 ---
-title: 'How do I get started?'
+id: get-started
 ---
 
-## STEP 1 - Get a key
-You will need to register for a key. To do this visit [**GET API Key**](https://remix.mashery.com/member/register) and complete your registration. We'll immediately send you an email with instructions on how to activate your new key. The whole process should take less than five minutes.
+<h2>
+    <span class="fa-stack fa-1x numberIcon">
+        <i class="fa fa-circle fa-stack-2x icon-stack-base c-bby-blue"></i>
+        <strong class="char-overlay fa-stack-1x">1</strong>
+    </span> Get a Key
+</h2>
+To register for a key, visit [**GET API Key**](https://remix.mashery.com/member/register). Complete your registration and we'll email you with instructions on how to activate your new key. The whole process should take less than five minutes.
 
-## STEP 2 - Create a query
-After you activate your key, you can start accessing Best Buy's data with a basic GET request. To help you get started, here is an example using our [**Products API**](/documentation/products-api) for a specific product. The SKU for _Batman Begins (Blu-ray Disc)_ is 8880044, so you can retrieve it in the example below. The response will be returned as either JSON or XML depending on the extension specified in the URL.
+<h2>
+    <span class="fa-stack fa-1x numberIcon">
+        <i class="fa fa-circle fa-stack-2x icon-stack-base c-bby-blue"></i>
+        <strong class="char-overlay fa-stack-1x">2</strong>
+    </span> Build a Query
+</h2>
+Our Query Builder allows you to access a subset of Best Buy API functionalities. Try it for yourself and let's start building something amazing.
 
-_HINT: Don't forget to replace **YourAPIKey** with the API key that you received from us._
+<a href="https://bestbuyapis.github.io/bby-query-mixer/" class="btn btn-lg btn-ghost-dark"><b>LAUNCH</b> Query Builder</a>
 
-{% include responses/getting-started.html %}
+<h2>
+    <span class="fa-stack fa-1x numberIcon">
+        <i class="fa fa-circle fa-stack-2x icon-stack-base c-bby-blue"></i>
+        <strong class="char-overlay fa-stack-1x">3</strong>
+    </span> Explore Our APIs
+</h2>
+Best Buy has a rich API offering from Products, to Stores, to Open Box and many more. We have also provided a quick reference to get you up and running smoothly.

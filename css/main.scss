@@ -2,15 +2,7 @@
 # this is needed
 ---
 
-@import "normalize-opentype", "atomic", "monokai";
 
-html, body {
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-bottom: 40px;
-}
 
 $font-family-sans-serif: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
 $font-size-base: 14px;
@@ -38,7 +30,7 @@ $brand-primary: $bby-blue;
 $brand-success: $web-green;
 $brand-info: $mybby-blue;
 
-$navbar-height: 92px;
+$navbar-height: 80px;
 $navbar-inverse-bg: $bby-blue;
 $navbar-inverse-color: white;
 $navbar-inverse-border: none;
@@ -46,7 +38,16 @@ $navbar-inverse-border: none;
 // Inverted navbar links
 $navbar-inverse-link-color: white;
 
-@import "bootstrap";
+html, body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 40px;
+    padding-top: $navbar-height / 2;
+}
+
+@import "normalize-opentype", "atomic", "monokai", "font-awesome/font-awesome", "bootstrap";
 
 .brand {
 	margin-top: 24px;
@@ -54,11 +55,11 @@ $navbar-inverse-link-color: white;
 }
 
 .hero-unit {
-	margin-top: -22px;
 	margin-bottom: 22px;
 	background-image: url({{site.baseurl}}/images/hero-unit.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+    background-position: center;
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -231,4 +232,80 @@ $navbar-inverse-link-color: white;
 
 .apis {
     margin-top: 30px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -$navbar-height;
+    visibility: hidden;
+}
+
+.btn {
+    transition: 0.2s;
+
+    &:hover {
+        transition: 0.2s;
+    }
+}
+
+.btn-ghost {
+    color: white;
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+        color: $bby-blue;
+        border-color: white;
+        background-color: white;
+    }
+}
+
+.btn-ghost-dark {
+    color: $bby-blue;
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+        color: white;
+        background-color: $bby-blue;
+        border-color: $bby-blue;
+    }
+}
+.btn-ghost-light {
+    color: white;
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+        color: $bby-blue;
+        border-color: white;
+        background-color: white;
+    }
+}
+
+.char-overlay {
+    color: white;
+    /*color: #032741;*/
+    font-weight: bold;
+    /*margin-left: 5%;*/
+    font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1; /* 1. */
+}
+
+.numberIcon {
+    font-size: 0.75em;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: inherit;
+    color: inherit;
+
+    &:hover {
+        background-color: inherit;
+    }
+
+    & > span {
+        border-bottom: 1px solid $bby-blue;
+        padding-bottom: 2px;
+    }
 }

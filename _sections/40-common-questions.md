@@ -1,5 +1,6 @@
 ---
 title: Common Questions
+id: faq
 ---
 
 #### Why are certain products filtered out of my search by default?
