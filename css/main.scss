@@ -2,7 +2,6 @@
 # this is needed
 ---
 
-@import "normalize-opentype", "atomic", "monokai";
 
 
 $font-family-sans-serif: Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -48,7 +47,7 @@ html, body {
     padding-top: $navbar-height / 2;
 }
 
-@import "bootstrap";
+@import "normalize-opentype", "atomic", "monokai", "font-awesome/font-awesome", "bootstrap";
 
 .brand {
 	margin-top: 24px;
@@ -240,4 +239,59 @@ a.anchor {
     position: relative;
     top: -$navbar-height;
     visibility: hidden;
+}
+
+.btn {
+    transition: 0.2s;
+
+    &:hover {
+        transition: 0.2s;
+    }
+}
+
+.btn-ghost {
+    color: white;
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+        color: $bby-blue;
+        border-color: white;
+        background-color: white;
+    }
+}
+
+.btn-ghost-dark {
+    color: $bby-blue;
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+        color: white;
+        background-color: $bby-blue;
+        border-color: $bby-blue;
+    }
+}
+.btn-ghost-light {
+    color: white;
+    background: transparent;
+    border-color: currentColor;
+
+    &:hover {
+        color: $bby-blue;
+        border-color: white;
+        background-color: white;
+    }
+}
+
+.char-overlay {
+    color: white;
+    /*color: #032741;*/
+    font-weight: bold;
+    /*margin-left: 5%;*/
+    font-feature-settings: "kern" 0, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1; /* 1. */
+}
+
+.numberIcon {
+    font-size: 0.75em;
 }

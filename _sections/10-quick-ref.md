@@ -4,7 +4,31 @@ id: quick-ref
 ---
 
 ## Best Buy API Overview
-Placeholder for API icons and descriptions from (_apis)
+
+<div class="apis">
+    {% for api in site.apis %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="row">
+    {% endif %}
+        <div class="col-sm-6 {{api.class}}">
+            <div class="media">
+                <a href="{{api.href}}">
+                    <img src="{{ site.baseurl }}{{api.retina}}" alt="" class="media-object pull-left">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <a href="{{api.href}}">{{api.name}}</a>
+                    </h4>
+                    {{api.content}}
+                </div>
+            </div>
+        </div>
+    {% if thecycle == 'even' or forloop.last %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
 
 ## Narrowing Your Results
 

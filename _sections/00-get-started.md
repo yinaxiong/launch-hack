@@ -2,13 +2,28 @@
 id: get-started
 ---
 
-## Get a key
+<h2>
+    <span class="fa-stack fa-1x numberIcon">
+        <i class="fa fa-circle fa-stack-2x icon-stack-base c-bby-blue"></i>
+        <strong class="char-overlay fa-stack-1x">1</strong>
+    </span> Get a Key
+</h2>
 To register for a key, visit [**GET API Key**](https://remix.mashery.com/member/register). Complete your registration and we'll email you with instructions on how to activate your new key. The whole process should take less than five minutes.
 
-## Build a Query
+<h2>
+    <span class="fa-stack fa-1x numberIcon">
+        <i class="fa fa-circle fa-stack-2x icon-stack-base c-bby-blue"></i>
+        <strong class="char-overlay fa-stack-1x">2</strong>
+    </span> Build a Query
+</h2>
 Our Query Builder allows you to access a subset of Best Buy API functionalities. Try it for yourself and let's start building something amazing.
 
-<a href="https://bestbuyapis.github.io/bby-query-mixer/" class="btn btn-lg btn-ghost"><b>LAUNCH</b> Query Builder</a>
+<a href="https://bestbuyapis.github.io/bby-query-mixer/" class="btn btn-lg btn-ghost-dark"><b>LAUNCH</b> Query Builder</a>
 
-## Explore Our APIs
+<h2>
+    <span class="fa-stack fa-1x numberIcon">
+        <i class="fa fa-circle fa-stack-2x icon-stack-base c-bby-blue"></i>
+        <strong class="char-overlay fa-stack-1x">3</strong>
+    </span> Explore Our APIs
+</h2>
 Best Buy has a rich API offering from Products, to Stores, to Open Box and many more. We have also provided a quick reference to get you up and running smoothly.
