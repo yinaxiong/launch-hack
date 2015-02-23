@@ -52,6 +52,47 @@
         });
 	}
 
+    function initScrollSpy() {
+        var currentAnchor, currentInSight, elements, ss;
+
+        ss = window.ScrollSpy();
+        ss.init({
+            offset: -51
+        });
+        elements = qsa('.nav.navbar-nav a');
+        _.forEach(elements, function (element) {
+            var anchor;
+
+            anchor = document.getElementById(element.getAttribute('href').replace('#', ''));
+
+            if (anchor) {
+                ss.spyOn(anchor);
+            }
+        });
+        document.addEventListener('ScrollSpyBackInSight', function (event) {
+            var anchorId;
+
+            if (event.data !== currentInSight) {
+                anchorId = event.data.id;
+
+                if (qs('[href="#' + anchorId + '"]', qs('.nav.navbar-nav'))) {
+                    currentInSight = event.data;
+
+                    if (currentAnchor && currentAnchor.classList) {
+                        currentAnchor.classList.remove('active');
+                    }
+
+                    currentAnchor = qs('[href="#' + anchorId + '"]').parentNode;
+
+                    if (currentAnchor.classList) {
+                        currentAnchor.classList.add('active');
+                    }
+                }
+            }
+        });
+        ss.handleScroll();
+    }
+
     function setHeightForCodeBlock(el) {
         $(el).height(function () {
             var block;
@@ -92,6 +133,7 @@
         }, 150));
 
 		resizeStatsFont();
+        initScrollSpy();
         _.forEach(qsa('.code-blocks'), function (el) {
             _.forEach(qsa('label', el), function (label) {
                 $(label).on('click touchstart', handleBlockSwitch);
