@@ -3,23 +3,10 @@
         <input type="radio" class="code-selector" name="code_101" id="code_101-json" value="json" checked="checked">
         <label for="code_101-json">json</label>
         <div class="content">
-            <div class="pos-r"><code class="hljs req"><span class="hljs-comment">#request:</span><br>http://api.remix.bestbuy.com/v1/products(categoryPath.name=%22Home%20Automation%22)?format=json&show=sku,name,salePrice&facet=manufacturer,5&apiKey=YourAPIKey
+            <div class="pos-r"><code class="hljs req"><span class="hljs-comment">#request:</span><br>http://api.bestbuy.com/beta/products/openBox?apiKey=YourAPIKey
 </code>
-                <hr><pre class="hljs"><code class="lang-json">{
-  "<span class="hljs-attribute">metadata</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">resultSet</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">count</span>": <span class="hljs-value"><span class="hljs-number">1480</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">context</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">canonicalUrl</span>": <span class="hljs-value"><span class="hljs-string">"http://api.bestbuy.com/beta/products/openBox?apiKey=YourAPIKey"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">page</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">current</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
-      "<span class="hljs-attribute">size</span>": <span class="hljs-value"><span class="hljs-number">10</span></span>,
-      "<span class="hljs-attribute">total</span>": <span class="hljs-value"><span class="hljs-number">148</span>
-    </span>}
-  </span>}</span>,
-  "<span class="hljs-attribute">results</span>": <span class="hljs-value">[
+                <hr><pre class="hljs"><code class="lang-json">
+  "<span class="hljs-attribute">results</span>": <span class="hljs-value">
     {
       "<span class="hljs-attribute">customerReviews</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">averageScore</span>": <span class="hljs-value"><span class="hljs-string">"4.5"</span></span>,

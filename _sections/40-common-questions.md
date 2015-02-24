@@ -13,4 +13,4 @@ The APIs have some latency with our data (approximately 20 minutes). This may be
 
 #### Why am I exceeding my default Queries Per Second (QPS) limit of 5 QPS and receiving emails and/or seeing 403 errors in my logs?
 
-Contact our operations team via developer@bestbuy.com and we will work with you to adjust your QPS as necessary.
+Try using our `in` operator to create a single query using multiple criteria. Here is an example of `in` list `http://api.remix.bestbuy.com/v1/products(sku in(43900,2088495,7150065))?apiKey=YourAPIKey&show=sku,name`. Additional tools to limit your query are available in our <a target="_blank" href="https://developer.bestbuy.com/documentation#overview"><b>Overview Section</b></a>. You can also contact our operations team via developer@bestbuy.com and we will work with you to adjust your QPS as necessary.
