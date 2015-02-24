@@ -26,4 +26,4 @@ Our Query Builder allows you to access a subset of Best Buy API functionalities.
         <strong class="char-overlay fa-stack-1x">3</strong>
     </span> Explore Our APIs
 </h2>
-Best Buy's APIs provides access to Products, Stores, Open Box and much more. Use our [**Quick Reference**](#quick-ref) to get up and running smoothly.
+Best Buy's APIs provide access to Products, Stores, Open Box and much more. Use our [**Quick Reference**](#quick-ref) to get up and running smoothly.
