@@ -2,6 +2,7 @@
 name: Commerce API (Invite Only)
 img: /images/apis/commerce.png
 retina: /images/apis/commerce@2x.png
+href: https://developer.bestbuy.com/apis
 class: grayscale
 ---
 
